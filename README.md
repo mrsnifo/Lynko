@@ -1,4 +1,4 @@
-# Lynko 🔗
+# Lynko
 
 One link for everything. Share all your links in one place.
 
