@@ -18,3 +18,19 @@ exports.getUser = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+exports.updateUser = async (req, res) => {
+  try {
+    const { displayName, bio } = req.body;
+    
+    const user = await User.findByIdAndUpdate(
+      req.userId,
+      { displayName, bio },
+      { new: true, runValidators: true }
+    ).select('-password -email');
+
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

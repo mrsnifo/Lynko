@@ -38,30 +38,18 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[var(--background)] p-4 relative overflow-hidden">
-      {/* Decorative Circles */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)] opacity-20 -top-32 -right-32 blur-3xl"></div>
-        <div className="absolute w-[250px] h-[250px] rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)] opacity-15 bottom-20 -left-20 blur-2xl"></div>
-        <div className="absolute w-[150px] h-[150px] rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)] opacity-10 bottom-40 right-32 blur-xl"></div>
-      </div>
-
-      {/* Register Container */}
-      <div className="w-full max-w-[480px] bg-[var(--surface)] rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-10 relative z-10">
-        {/* Header */}
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="w-full max-w-[480px] bg-[var(--surface)] rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-10">
         <div className="text-center mb-8">
-           <h2 className="text-4xl font-bold text-[var(--primary)] mb-3">
-                Create Account
-            </h2>
+          <h2 className="text-4xl font-bold text-[var(--primary)] mb-3">
+            Create Account
+          </h2>
           <p className="text-[var(--text-secondary)] text-base">
             Get started with your personal link page
           </p>
         </div>
 
-        {/* Error Message */}
         <ErrorMessage message={error} />
-
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-5">
           <FloatingInput
             label="Username"
@@ -92,10 +80,7 @@ export default function Register() {
           </Button>
         </form>
 
-        {/* Theme Toggle */}
         <ThemeToggle />
-
-        {/* Divider */}
         <div className="relative my-8">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-[var(--border-color)]"></div>
@@ -106,8 +91,6 @@ export default function Register() {
             </span>
           </div>
         </div>
-
-        {/* Footer */}
         <div className="text-center">
           <Link 
             to="/login" 
