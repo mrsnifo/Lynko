@@ -49,9 +49,9 @@ export default function Login() {
       <div className="w-full max-w-[480px] bg-[var(--surface)] rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-10 relative z-10">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[var(--primary)] to-[#E09D00] bg-clip-text text-transparent mb-3">
-            Welcome Back
-          </h2>
+            <h2 className="text-4xl font-bold text-[var(--primary)] mb-3">
+                Welcome Back
+            </h2>
           <p className="text-[var(--text-secondary)] text-base">
             Sign in to continue to Lynko
           </p>

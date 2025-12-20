@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --primary: #FF6B35;
-    --primary-light: rgba(255, 107, 53, 0.1);
+    --primary: #7C3AED;
+    --primary-light: rgba(124, 58, 237, 0.1);
     --surface: #FFFFFF;
     --surface-light: #F7F7F7;
     --background: #FAFAFA;
@@ -17,8 +17,8 @@
   }
 
   .dark {
-    --primary: #FF6B35;
-    --primary-light: rgba(255, 107, 53, 0.1);
+    --primary: #7C3AED;
+    --primary-light: rgba(124, 58, 237, 0.1);
     --surface: #1A1A1A;
     --surface-light: #242424;
     --background: #121212;
