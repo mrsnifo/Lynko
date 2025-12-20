@@ -1,4 +1,4 @@
-import '../interceptors';
+import './interceptors';
 
 export * from './services/auth';
 export * from './services/links';
